@@ -1,0 +1,23 @@
+# 定义服务
+services:
+  # PostgreSQL 数据库服务
+  db:
+    image: postgres:16-alpine # 使用官方的 PostgreSQL 16 Alpine 镜像
+    container_name: demo_db
+    restart: always
+    environment:
+      # 设置数据库的超级用户和密码
+      POSTGRES_USER: ${PGUSER}
+      POSTGRES_PASSWORD: ${PGPASSWORD}
+      POSTGRES_DB: ${PGDATABASE}
+    ports:
+      # 将主机的 ${PGPORT} 端口映射到容器的 5432 端口
+      # 这样您的本地应用就可以通过 localhost:${PGPORT} 连接到数据库
+      - "${PGPORT:-5432}:5432"
+    volumes:
+      # 将数据持久化到本地的命名卷中，防止数据丢失
+      - postgres_data:/var/lib/postgresql/data/
+
+# 定义命名卷
+volumes:
+  postgres_data:
