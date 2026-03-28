@@ -1,0 +1,79 @@
+title: "ApexPro Portaal voor Facilitaire Diensten"
+description: Beheer serviceorders, facturen, serviceverzoeken en SLA’s in één veilig portaal.
+seo:
+  title: ApexPro Facilitaire Diensten
+  description: Eén portaal voor bedrijven om orders, facturen, verzoeken en SLA-prestaties te beheren.
+navigation: false
+hero:
+  links:
+    - label: Inloggen
+      icon: i-lucide-log-in
+      to: /login
+      size: xl
+      color: primary
+    - label: Aanmelden
+      icon: i-lucide-user-plus
+      to: /signup
+      size: xl
+      color: neutral
+      variant: subtle
+sections:
+  - title: Gemaakt voor facility teams
+    description: ApexPro levert betrouwbare schoonmaak-, onderhouds- en coördinatiediensten, ondersteund door een transparant klantenportaal.
+    id: features
+    orientation: horizontal
+    features:
+      - name: Orders volgen
+        description: Volg serviceorders van aanvraag tot oplevering met realtime status.
+        icon: i-lucide-clipboard-list
+      - name: Facturen bekijken
+        description: Raadpleeg facturen en download PDF’s wanneer u wilt.
+        icon: i-lucide-receipt-text
+      - name: Serviceverzoeken
+        description: Dien verzoeken in en volg ze op met duidelijke termijnen.
+        icon: i-lucide-life-buoy
+  - title: Waarom ApexPro
+    description: Operationele betrouwbaarheid, duidelijke communicatie en meetbare resultaten.
+    orientation: horizontal
+    reverse: true
+    features:
+      - name: Betrouwbare levering
+        description: Teams ingepland en gemonitord om uw servicevensters te halen.
+        icon: i-lucide-calendar-check
+      - name: Transparante rapportage
+        description: SLA-dashboards en exporteerbare rapporten.
+        icon: i-lucide-chart-line
+      - name: Toegewijde support
+        description: Snelle reacties van ons portaalondersteuningsteam.
+        icon: i-lucide-headset
+features:
+  title: Wat u in het portaal kunt doen
+  description: Alles om uw facilitaire diensten op één plek te beheren.
+  items:
+    - title: Orders
+      description: Maak, keur goed en volg werkbonnen met status en notities.
+      icon: i-lucide-clipboard-check
+    - title: Facturen
+      description: Bekijk factuurhistorie, download PDF’s en beheer facturatiegegevens.
+      icon: i-lucide-file-text
+    - title: Verzoeken
+      description: Dien nieuwe serviceverzoeken in met prioriteit en bijlagen.
+      icon: i-lucide-mail-plus
+    - title: SLA-monitoring
+      description: Volg KPI’s met duidelijke dashboards en exports.
+      icon: i-lucide-gauge
+    - title: Meldingen
+      description: Ontvang proactieve updates over geplande bezoeken en wijzigingen.
+      icon: i-lucide-bell
+cta:
+  title: Klaar om te starten?
+  description: Log in om uw diensten te beheren of maak een account aan bij ApexPro.
+  links:
+    - label: Aanmelden
+      to: '/signup'
+      color: primary
+      icon: i-lucide-user-plus
+    - label: Inloggen
+      to: '/login'
+      variant: subtle
+      icon: i-lucide-log-in

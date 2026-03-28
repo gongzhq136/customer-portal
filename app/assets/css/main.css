@@ -1,0 +1,398 @@
+@import "tailwindcss";
+@import "@nuxt/ui";
+
+:root {
+  --font-sans: 'Bricolage Grotesque', sans-serif;
+
+
+  /* Primary - Sky Blue */
+  --color-primary-50: #f0f9ff;
+  --color-primary-100: #e0f2fe;
+  --color-primary-200: #bae6fd;
+  --color-primary-300: #7dd3fc;
+  --color-primary-400: #38bdf8;
+  --color-primary-500: #75cbfe;
+  --color-primary-600: #0ea5e9;
+  --color-primary-700: #0284c7;
+  --color-primary-800: #0369a1;
+  --color-primary-900: #0c4a6e;
+  --color-primary-950: #082f49;
+
+  /* Secondary - Electric Blue */
+  --color-secondary-50: #eff6ff;
+  --color-secondary-100: #dbeafe;
+  --color-secondary-200: #bfdbfe;
+  --color-secondary-300: #93c5fd;
+  --color-secondary-400: #60a5fa;
+  --color-secondary-500: #3b82f6;
+  --color-secondary-600: #2563eb;
+  --color-secondary-700: #1d4ed8;
+  --color-secondary-800: #1e40af;
+  --color-secondary-900: #1e3a8a;
+  --color-secondary-950: #172554;
+
+  /* Success - Neon Green */
+  --color-success-50: #f0fdf4;
+  --color-success-100: #dcfce7;
+  --color-success-200: #bbf7d0;
+  --color-success-300: #86efac;
+  --color-success-400: #4ade80;
+  --color-success-500: #22c55e;
+  --color-success-600: #16a34a;
+  --color-success-700: #15803d;
+  --color-success-800: #166534;
+  --color-success-900: #14532d;
+  --color-success-950: #052e16;
+
+  /* Warning - Solar Orange */
+  --color-warning-50: #fff7ed;
+  --color-warning-100: #ffedd5;
+  --color-warning-200: #fed7aa;
+  --color-warning-300: #fdba74;
+  --color-warning-400: #fb923c;
+  --color-warning-500: #f97316;
+  --color-warning-600: #ea580c;
+  --color-warning-700: #c2410c;
+  --color-warning-800: #9a3412;
+  --color-warning-900: #7c2d12;
+  --color-warning-950: #431407;
+
+  /* Error - Plasma Red */
+  --color-error-50: #fef2f2;
+  --color-error-100: #fee2e2;
+  --color-error-200: #fecaca;
+  --color-error-300: #fca5a5;
+  --color-error-400: #f87171;
+  --color-error-500: #ef4444;
+  --color-error-600: #dc2626;
+  --color-error-700: #b91c1c;
+  --color-error-800: #991b1b;
+  --color-error-900: #7f1d1d;
+  --color-error-950: #450a0a;
+
+  /* Info - Cyber Cyan */
+  --color-info-50: #ecfeff;
+  --color-info-100: #cffafe;
+  --color-info-200: #a5f3fc;
+  --color-info-300: #67e8f9;
+  --color-info-400: #22d3ee;
+  --color-info-500: #06b6d4;
+  --color-info-600: #0891b2;
+  --color-info-700: #0e7490;
+  --color-info-800: #155e75;
+  --color-info-900: #164e63;
+  --color-info-950: #083344;
+
+  /* Neutral - Deep Space */
+  --color-neutral-50: #f8fafc;
+  --color-neutral-100: #f1f5f9;
+  --color-neutral-200: #e2e8f0;
+  --color-neutral-300: #cbd5e1;
+  --color-neutral-400: #94a3b8;
+  --color-neutral-500: #64748b;
+  --color-neutral-600: #475569;
+  --color-neutral-700: #334155;
+  --color-neutral-800: #1e293b;
+  --color-neutral-900: #0f172a;
+  --color-neutral-950: #020617;
+
+  /* Special Accent Colors - Coral Pink */
+  --color-accent-50: #fef2f2;
+  --color-accent-100: #fee2e2;
+  --color-accent-200: #fecaca;
+  --color-accent-300: #fca5a5;
+  --color-accent-400: #f87171;
+  --color-accent-500: #ef4444;
+  --color-accent-600: #dc2626;
+  --color-accent-700: #b91c1c;
+  --color-accent-800: #991b1b;
+  --color-accent-900: #7f1d1d;
+  --color-accent-950: #450a0a;
+}
+
+/* Light Mode - Enhanced Vibrant Theme */
+:root {
+  /* Primary colors - more vibrant */
+  --ui-primary: var(--color-primary-600);
+  --ui-secondary: var(--color-secondary-600);
+  --ui-success: var(--color-success-600);
+  --ui-warning: var(--color-warning-600);
+  --ui-error: var(--color-error-600);
+  --ui-info: var(--color-info-600);
+
+  /* Text colors - improved contrast */
+  --ui-text-dimmed: var(--color-neutral-500);
+  --ui-text-muted: var(--color-neutral-600);
+  --ui-text-toned: var(--color-neutral-700);
+  --ui-text: var(--color-neutral-900);
+  --ui-text-highlighted: #0f172a;
+  --ui-text-inverted: #ffffff;
+
+  /* Background colors - warmer, more vibrant with subtle gradients */
+  --ui-bg: #ffffff;
+  --ui-bg-muted: #f8fafc;
+  --ui-bg-elevated: #ffffff;
+  --ui-bg-accented: #f0f9ff;
+  --ui-bg-inverted: var(--color-neutral-900);
+
+  /* Border colors - more defined and subtle */
+  --ui-border: #e2e8f0;
+  --ui-border-muted: #f1f5f9;
+  --ui-border-accented: #cbd5e1;
+  --ui-border-inverted: var(--color-neutral-800);
+
+  /* Special effects */
+  --ui-radius: 0.75rem;
+  --ui-container: var(--container-7xl);
+  --ui-header-height: 4.5rem;
+
+  /* Shadow enhancements for depth */
+  --ui-shadow-sm: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
+  --ui-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px -1px rgba(0, 0, 0, 0.1);
+  --ui-shadow-md: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -2px rgba(0, 0, 0, 0.1);
+  --ui-shadow-lg: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -4px rgba(0, 0, 0, 0.1);
+  --ui-shadow-xl: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 8px 10px -6px rgba(0, 0, 0, 0.1);
+
+  /* Subtle gradient overlays */
+  --ui-gradient-subtle: linear-gradient(135deg, rgba(59, 130, 246, 0.03) 0%, rgba(249, 115, 22, 0.02) 100%);
+  --ui-gradient-warm: linear-gradient(135deg, rgba(255, 247, 237, 0.5) 0%, rgba(240, 249, 255, 0.5) 100%);
+}
+
+/* Dark Mode - Deep Space */
+.dark {
+  /* Primary colors - brighter for dark mode */
+  --ui-primary: var(--color-primary-400);
+  --ui-secondary: var(--color-secondary-400);
+  --ui-success: var(--color-success-400);
+  --ui-warning: var(--color-warning-400);
+  --ui-error: var(--color-error-400);
+  --ui-info: var(--color-info-400);
+
+  /* Text colors */
+  --ui-text-dimmed: var(--color-neutral-500);
+  --ui-text-muted: var(--color-neutral-400);
+  --ui-text-toned: var(--color-neutral-300);
+  --ui-text: var(--color-neutral-200);
+  --ui-text-highlighted: var(--color-neutral-50);
+  --ui-text-inverted: var(--color-neutral-900);
+
+  /* Background colors - deep space theme */
+  --ui-bg: #0a0f1a;
+  --ui-bg-muted: #0f172a;
+  --ui-bg-elevated: #1e293b;
+  --ui-bg-accented: #334155;
+  --ui-bg-inverted: var(--color-neutral-50);
+
+  /* Border colors */
+  --ui-border: var(--color-neutral-700);
+  --ui-border-muted: var(--color-neutral-800);
+  --ui-border-accented: var(--color-neutral-600);
+  --ui-border-inverted: var(--color-neutral-200);
+}
+
+/* Page Transitions */
+.fade-enter-active,
+.fade-leave-active {
+  transition: opacity 0.3s ease;
+}
+
+.fade-enter-from,
+.fade-leave-to {
+  opacity: 0;
+}
+
+.fade-enter-to,
+.fade-leave-from {
+  opacity: 1;
+}
+
+/* UMain Content Transitions */
+.main-content {
+  position: relative;
+  overflow: hidden;
+}
+
+/* Nuxt Page Transitions */
+.main-fade-enter-active {
+  transition: all 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+}
+
+.main-fade-leave-active {
+  transition: all 0.3s cubic-bezier(0.55, 0.06, 0.68, 0.19);
+}
+
+.main-fade-enter-from {
+  opacity: 0;
+  transform: translateY(20px) scale(0.98);
+}
+
+.main-fade-leave-to {
+  opacity: 0;
+  transform: translateY(-10px) scale(1.02);
+}
+
+.main-fade-enter-to,
+.main-fade-leave-from {
+  opacity: 1;
+  transform: translateY(0) scale(1);
+}
+
+/* Enhanced cosmic transition effects for page content */
+.main-fade-enter-active {
+  position: relative;
+}
+
+.main-fade-enter-active::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: linear-gradient(135deg,
+    rgba(59, 130, 246, 0.05) 0%,
+    rgba(249, 115, 22, 0.05) 50%,
+    rgba(34, 197, 94, 0.05) 100%);
+  opacity: 0;
+  transition: opacity 0.4s ease;
+  pointer-events: none;
+  z-index: -1;
+  border-radius: var(--ui-radius);
+}
+
+.main-fade-enter-active::before {
+  opacity: 1;
+}
+
+/* Smooth scroll behavior for better UX */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Light Mode Enhancements */
+
+/* Enhanced body background with subtle gradient */
+:root body {
+  background-color: var(--ui-bg);
+  background-image:
+    radial-gradient(at 0% 0%, rgba(59, 130, 246, 0.03) 0px, transparent 50%),
+    radial-gradient(at 100% 100%, rgba(249, 115, 22, 0.02) 0px, transparent 50%);
+  background-attachment: fixed;
+}
+
+/* Enhanced card styling */
+:root [class*="card"],
+:root [data-variant="subtle"],
+:root [data-variant="outline"] {
+  transition: all 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+/* Better shadows for elevated surfaces */
+:root [class*="shadow"] {
+  box-shadow: var(--ui-shadow);
+}
+
+/* Cards with better depth */
+:root .nuxt-ui-card,
+:root [data-headlessui-state] {
+  border-color: var(--ui-border);
+  background: var(--ui-bg-elevated);
+}
+
+/* Subtle background for muted areas */
+:root [class*="bg-gray-50"],
+:root [class*="bg-slate-50"] {
+  background-color: var(--ui-bg-muted) !important;
+}
+
+/* Enhanced borders */
+:root [class*="border-gray-200"],
+:root [class*="border-slate-200"] {
+  border-color: var(--ui-border) !important;
+}
+
+/* Better text contrast */
+:root [class*="text-gray-600"],
+:root [class*="text-slate-600"] {
+  color: var(--ui-text-toned) !important;
+}
+
+:root [class*="text-gray-500"],
+:root [class*="text-slate-500"] {
+  color: var(--ui-text-muted) !important;
+}
+
+:root [class*="text-gray-900"],
+:root [class*="text-slate-900"] {
+  color: var(--ui-text-highlighted) !important;
+}
+
+/* Enhanced hover states */
+:root [class*="hover:bg-gray-50"],
+:root [class*="hover:bg-slate-50"] {
+  transition: background-color 0.2s ease;
+}
+
+:root [class*="hover:bg-gray-50"]:hover,
+:root [class*="hover:bg-slate-50"]:hover {
+  background-color: var(--ui-bg-accented) !important;
+}
+
+/* Primary buttons with better contrast */
+:root button[class*="bg-primary"],
+:root [class*="bg-blue-600"],
+:root [class*="bg-primary-600"] {
+  box-shadow: 0 2px 4px rgba(14, 165, 233, 0.2);
+  transition: all 0.2s ease;
+}
+
+:root button[class*="bg-primary"]:hover,
+:root [class*="bg-blue-600"]:hover,
+:root [class*="bg-primary-600"]:hover {
+  box-shadow: 0 4px 8px rgba(14, 165, 233, 0.3);
+  transform: translateY(-1px);
+}
+
+/* Subtle card hover effects */
+:root [class*="card"]:hover {
+  box-shadow: var(--ui-shadow-md);
+  border-color: var(--ui-border-accented);
+}
+
+/* Modal backdrop styling for light mode ONLY - using very light primary color tint */
+/* Override the backdrop overlay used by Nuxt UI modals */
+/* Using primary-50 color (#f0f9ff) with 75% opacity for better visibility */
+/* Dark mode is excluded - it already has proper backdrop styling */
+
+/* Most universal selector - targets ANY fixed full-screen element that's not a dialog */
+/* Only applies in light mode (explicitly excludes dark mode) */
+html:not(.dark) div.fixed.inset-0:not([role="dialog"]):not([aria-labelledby]):not([aria-describedby]),
+html.light div.fixed.inset-0:not([role="dialog"]):not([aria-labelledby]):not([aria-describedby]),
+html:not(.dark) .fixed.inset-0:not([role="dialog"]):not([aria-labelledby]):not([aria-describedby]),
+html.light .fixed.inset-0:not([role="dialog"]):not([aria-labelledby]):not([aria-describedby]) {
+  background-color: rgba(240, 249, 255, 0.75) !important;
+  backdrop-filter: blur(2px);
+}
+
+/* Target overlay with z-index classes - light mode only */
+html:not(.dark) .fixed.inset-0.z-50:not([role="dialog"]),
+html.light .fixed.inset-0.z-50:not([role="dialog"]),
+html:not(.dark) .fixed.inset-0.z-\[50\]:not([role="dialog"]),
+html.light .fixed.inset-0.z-\[50\]:not([role="dialog"]) {
+  background-color: rgba(240, 249, 255, 0.75) !important;
+  backdrop-filter: blur(2px);
+}
+
+/* Target overlay with data-headlessui-state attribute - light mode only */
+html:not(.dark) [data-headlessui-state].fixed.inset-0:not([role="dialog"]),
+html.light [data-headlessui-state].fixed.inset-0:not([role="dialog"]) {
+  background-color: rgba(240, 249, 255, 0.75) !important;
+  backdrop-filter: blur(2px);
+}
+
+/* Target backdrop that appears before dialog in DOM - light mode only */
+html:not(.dark) [role="dialog"] ~ .fixed.inset-0,
+html.light [role="dialog"] ~ .fixed.inset-0 {
+  background-color: rgba(240, 249, 255, 0.75) !important;
+  backdrop-filter: blur(2px);
+}

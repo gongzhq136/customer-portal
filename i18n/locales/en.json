@@ -1,0 +1,760 @@
+{
+  "admin": {
+    "menu": {
+      "organizations": "Organizations",
+      "users": "Users"
+    },
+    "errors": {
+      "accessRequired": "Admin access required",
+      "failedToLoadUsers": "Failed to load users",
+      "failedToUpdateRole": "Failed to update user role",
+      "cannotChangeOwnRole": "You cannot change your own role"
+    },
+    "organization": {
+      "title": "Organization Details",
+      "manage": {
+        "title": "Manage Organizations",
+        "back": "Back",
+        "name": "Organization Name"
+      },
+      "create": {
+        "title": "Create Organization",
+        "back": "Back",
+        "name": "Organization Name",
+        "namePlaceholder": "Enter organization name",
+        "slug": "Organization Slug",
+        "slugPlaceholder": "organization-slug",
+        "slugHint": "URL-friendly identifier for your organization",
+        "createButton": "Create Organization",
+        "cancel": "Cancel",
+        "errors": {
+          "createFailed": "Failed to create organization"
+        },
+        "validation": {
+          "nameRequired": "Organization name is required",
+          "slugRequired": "Organization slug is required",
+          "slugInvalid": "Slug can only contain lowercase letters, numbers, and hyphens"
+        }
+      },
+      "detail": {
+        "back": "Back to Organizations",
+        "backToMyOrganizations": "Back to my organizations",
+        "loading": "Loading organization...",
+        "title": "Organization Details",
+        "name": "",
+        "slug": "Slug",
+        "created": "Created",
+        "members": {
+          "title": "Members",
+          "empty": "No members yet",
+          "email": "Email",
+          "name": "Name",
+          "role": "Role"
+        },
+        "invitations": {
+          "title": "Invitations",
+          "empty": "No pending invitations",
+          "email": "Email",
+          "role": "Role",
+          "status": "Status",
+          "expires": "Expires",
+          "actions": "Actions",
+          "resend": "Resend",
+          "delete": "Delete",
+          "inviteMember": "Invite Member",
+          "modalTitle": "Invite Organization Member",
+          "emailLabel": "Email Address",
+          "emailPlaceholder": "Enter the email address",
+          "roleLabel": "Role",
+          "roleRequired": "Role is required",
+          "roleOwner": "Owner",
+          "roleAdmin": "Admin",
+          "roleMember": "Member",
+          "sendButton": "Send Invitation",
+          "sendSuccess": "Invitation sent successfully",
+          "cancel": "Cancel",
+          "confirmResend": {
+            "title": "Resend Invitation",
+            "message": "Are you sure you want to resend the invitation to {email} as {role}?",
+            "confirm": "Resend"
+          },
+          "confirmDelete": {
+            "title": "Delete Invitation",
+            "message": "Are you sure you want to delete this invitation? This action cannot be undone.",
+            "confirm": "Delete"
+          },
+          "resendSuccess": "Invitation resent successfully",
+          "deleteSuccess": "Invitation deleted successfully"
+        },
+        "errors": {
+          "loadFailed": "Failed to load organization",
+          "sendInvitationFailed": "Failed to send invitation",
+          "resendFailed": "Failed to resend invitation",
+          "cancelFailed": "Failed to cancel invitation"
+        },
+        "confirm": {
+          "cancelInvitation": "Are you sure you want to cancel this invitation?"
+        }
+      },
+      "list": {
+        "title": "Organizations",
+        "createButton": "Create Organization",
+        "loading": "Loading organizations...",
+        "empty": "No organizations found",
+        "view": "View",
+        "name": "Name",
+        "slug": "Slug",
+        "created": "Created"
+      }
+    },
+    "user": {
+      "roles": {
+        "admin": "admin",
+        "user": "user"
+      },
+      "list": {
+        "title": "Users",
+        "createButton": "Create User",
+        "loading": "Loading users...",
+        "empty": "No users found",
+        "actions": "Actions",
+        "created": "Created",
+        "email": "Email",
+        "name": "Name",
+        "noDataFound": "No users found",
+        "notAvailable": "N/A",
+        "role": "Role",
+        "verified": "Verified"
+      },
+      "updateRole": {
+        "title": "Update Role",
+        "description": "Update the role for this user",
+        "confirm": "Update Role",
+        "success": "Role updated successfully",
+        "error": "Failed to update role"
+      },
+      "verification": {
+        "pending": "Pending",
+        "verified": "Verified"
+      },
+      "ban": {
+        "title": "Ban User",
+        "description": "Ban this user from accessing the application",
+        "reason": "Ban Reason",
+        "reasonPlaceholder": "Enter reason for ban (optional)",
+        "expiresIn": "Ban Expires In",
+        "expiresInDays": "Days",
+        "expiresInHours": "Hours",
+        "expiresInMinutes": "Minutes",
+        "never": "Never",
+        "confirm": "Ban User",
+        "success": "User banned successfully",
+        "error": "Failed to ban user",
+        "cannotBanAdmin": "Admin users cannot be banned"
+      },
+      "unban": {
+        "title": "Unban User",
+        "description": "Remove the ban from this user",
+        "confirm": "Unban User",
+        "success": "User unbanned successfully",
+        "error": "Failed to unban user"
+      },
+      "impersonate": {
+        "title": "Impersonate User",
+        "description": "You will be logged in as this user. All actions will be performed on their behalf.",
+        "warning": "Warning: Impersonating a user gives you full access to their account.",
+        "confirm": "Impersonate",
+        "success": "Impersonation started successfully",
+        "error": "Failed to start impersonation",
+        "stop": "Stop Impersonating",
+        "stopSuccess": "Stopped impersonating successfully",
+        "stopError": "Failed to stop impersonation",
+        "indicator": "You are currently impersonating a user"
+      },
+      "sessions": {
+        "title": "User Sessions",
+        "description": "Manage active sessions for this user",
+        "noSessions": "No active sessions",
+        "revoke": "Revoke Session",
+        "revokeAll": "Revoke All Sessions",
+        "revokeSuccess": "Session revoked successfully",
+        "revokeAllSuccess": "All sessions revoked successfully",
+        "revokeError": "Failed to revoke session",
+        "cannotRevokeCurrentSession": "You cannot revoke your current session",
+        "currentSession": "Current Session",
+        "ipAddress": "IP Address",
+        "userAgent": "User Agent",
+        "createdAt": "Created",
+        "expiresAt": "Expires",
+        "active": "Active",
+        "expired": "Expired"
+      },
+      "password": {
+        "title": "Change Password",
+        "description": "Set a new password for this user",
+        "newPassword": "New Password",
+        "newPasswordPlaceholder": "Enter new password",
+        "confirm": "Change Password",
+        "success": "Password changed successfully",
+        "error": "Failed to change password"
+      },
+      "update": {
+        "title": "Update User",
+        "description": "Update user information",
+        "name": "Name",
+        "image": "Profile Image URL",
+        "imagePlaceholder": "https://example.com/avatar.jpg",
+        "confirm": "Update User",
+        "success": "User updated successfully",
+        "error": "Failed to update user"
+      },
+      "actions": {
+        "ban": "Ban User",
+        "unban": "Unban User",
+        "impersonate": "Impersonate",
+        "sessions": "View Sessions",
+        "changePassword": "Change Password",
+        "update": "Update User"
+      },
+      "status": {
+        "banned": "Banned",
+        "notBanned": "Active"
+      }
+    }
+  },
+  "common": {
+    "refresh": "Refresh",
+    "cancel": "Cancel",
+    "close": "Close",
+    "confirm": "Confirm",
+    "createdAt": "Created at",
+    "delete": "Delete",
+    "descending": "Descending",
+    "direction": "Direction",
+    "edit": "Edit",
+    "error": "An error occurred",
+    "learnMore": "Learn more",
+    "loaded": "Loaded",
+    "loading": "Loading...",
+    "readMore": "Read more",
+    "reset": "Reset",
+    "save": "Save",
+    "sort": "Sort",
+    "sortBy": "Sort by",
+    "success": "Success",
+    "totalRecords": "Total records",
+    "searchPlaceholder": "Search...",
+    "ascending": "Ascending",
+    "view": "View"
+  },
+  "menu": {
+    "dashboard": "Dashboard",
+    "serviceRequests": {
+      "title": "Service Requests"
+    },
+    "inbox": "Inbox",
+    "customers": "Customers",
+    "helpSupport": "Help & Support",
+    "feedback": "Feedback",
+    "home": "Home",
+    "documentation": "Documentation",
+    "profile": "Profile",
+    "theme": "Theme",
+    "settings": {
+      "title": "Settings",
+      "profile": "Profile",
+      "organization": "Organization",
+      "notifications": "Notifications",
+      "security": "Security"
+    },
+    "logout": "Log Out"
+  },
+  "settings": {
+    "title": "Settings",
+    "profile": "Profile",
+    "organization": "Organization",
+    "notifications": "Notifications",
+    "security": "Security",
+    "documentation": "Documentation"
+  },
+  "security": {
+    "password": {
+      "title": "Password",
+      "description": "Confirm your current password before setting a new one.",
+      "currentPassword": "Current Password",
+      "currentPasswordPlaceholder": "Enter your current password",
+      "newPassword": "New Password",
+      "newPasswordPlaceholder": "Enter your new password",
+      "updateButton": "Update Password",
+      "validation": {
+        "currentPasswordRequired": "Current password is required",
+        "newPasswordRequired": "New password is required",
+        "passwordsMustBeDifferent": "New password must be different from current password",
+        "passwordsMustBeDifferentShort": "Passwords must be different"
+      },
+      "success": "Password changed successfully",
+      "error": "Failed to change password"
+    },
+    "account": {
+      "title": "Terminate Account",
+      "description": "No longer want to use our service? You can delete your account here. This action is not reversible. All information related to this account will be deleted permanently.",
+      "deleteButton": "Delete account",
+      "deleteRequested": "Account Deletion Requested",
+      "deleteRequestedDescription": "We have sent you a verification email. Please check your email and click the link to complete the account deletion process.",
+      "delete": {
+        "confirmTitle": "Confirm Account Deletion",
+        "confirmMessage": "Are you sure you want to delete your account? This action cannot be undone.",
+        "passwordRequired": "Please enter your password to confirm account deletion",
+        "passwordPlaceholder": "Enter your password",
+        "deleteButton": "Delete Account",
+        "cancelButton": "Cancel",
+        "success": "Account deleted successfully",
+        "error": "Failed to delete account",
+        "emailVerificationSent": "Verification email sent. Please check your email to complete account deletion."
+      }
+    }
+  },
+  "contact": {
+    "cards": {
+      "email": {
+        "description": "Send us an email and we'll respond within 24 hours",
+        "title": "Email Us"
+      },
+      "follow": {
+        "description": "Connect with us on social media",
+        "title": "Follow Us"
+      },
+      "phone": {
+        "description": "Speak directly with our team",
+        "title": "Call Us"
+      },
+      "visit": {
+        "description": "Based in Rotterdam, Netherlands",
+        "title": "Visit Us"
+      }
+    },
+    "company": {
+      "description": "ApexPro delivers reliable cleaning, maintenance and coordination services for businesses, backed by a modern, transparent customer portal.",
+      "experience": "15+ years",
+      "founded": "2010",
+      "name": "ApexPro",
+      "tagline": "Facility services for businesses"
+    },
+    "cta": {
+      "description": "Contact sales for services and quotes, or reach portal support.",
+      "sales": "Contact sales",
+      "support": "Portal support",
+      "title": "How can we help?"
+    },
+    "description": "We’re here to help with services, quotes and portal support.",
+    "info": {
+      "address": "1200 Commerce Ave, Suite 500, Rotterdam, NL",
+      "phone": "+31 10 123 4567"
+    },
+    "title": "Contact ApexPro"
+  },
+  "dashboard": {
+    "activity": {
+      "recentActivity": "Recent Activity"
+    },
+    "buttons": {
+      "export": "Export",
+      "generateReport": "Generate Report",
+      "newOrder": "New Order",
+      "newRequest": "New Request",
+      "viewAll": "View All",
+      "viewAllOrders": "View All Orders",
+      "viewInvoices": "View Invoices"
+    },
+    "cards": {
+      "completed": "completed",
+      "invoices": "Invoices",
+      "overdue": "overdue",
+      "paid": "paid",
+      "pending": "pending",
+      "satisfaction": "Satisfaction",
+      "slaCompliance": "SLA Compliance",
+      "totalOrders": "Total Orders"
+    },
+    "charts": {
+      "chartPlaceholder": "Chart visualization would go here",
+      "integrationNote": "Integration with chart library needed",
+      "ordersCompleted": "Orders Completed",
+      "slaChartPlaceholder": "SLA performance chart would go here",
+      "slaPerformance": "SLA Performance"
+    },
+    "seo": {
+      "description": "Manage your facility services, orders, and invoices with ApexPro",
+      "title": "Dashboard - ApexPro Portal"
+    },
+    "stats": {
+      "avgResolutionTime": "Avg Resolution Time",
+      "avgResponseTime": "Avg Response Time",
+      "quickActions": "Quick Actions"
+    },
+    "title": "Dashboard",
+    "welcome": "Welcome back! Here's what's happening with your facility services."
+  },
+  "footer": {
+    "copyright": "All rights reserved."
+  },
+  "forgotPassword": {
+    "buttons": {
+      "backToLogin": "Back to Login",
+      "resendCode": "Resend Code",
+      "resetPassword": "Reset Password",
+      "sendCode": "Send Code"
+    },
+    "description": "Enter your email address and we'll send you a verification code to reset your password.",
+    "fields": {
+      "confirmPassword": "Confirm Password",
+      "confirmPasswordPlaceholder": "Confirm your new password",
+      "email": "Email Address",
+      "emailPlaceholder": "Enter your email address",
+      "newPassword": "New Password",
+      "newPasswordPlaceholder": "Enter your new password",
+      "otp": "Verification Code",
+      "otpPlaceholder": "000000"
+    },
+    "messages": {
+      "codeSent": "Verification code sent to your email!",
+      "invalidCode": "Invalid verification code",
+      "passwordReset": "Password reset successfully! Redirecting to login...",
+      "resendError": "Failed to resend code",
+      "resendIn": "Resend in {seconds}s",
+      "resetError": "Failed to reset password",
+      "userNotFound": "No account found with this email address"
+    },
+    "step2Description": "Enter the 6-digit code sent to {email} and your new password.",
+    "title": "Reset Your Password",
+    "validation": {
+      "confirmPasswordRequired": "Please confirm your password",
+      "emailRequired": "Email address is required",
+      "invalidEmail": "Please enter a valid email address",
+      "otpLength": "Please enter a 6-digit code",
+      "otpRequired": "Verification code is required",
+      "passwordMinLength": "Password must be at least 8 characters",
+      "passwordRequired": "Password is required",
+      "passwordsMatch": "Passwords must match"
+    }
+  },
+  "home": {
+    "cta": {
+      "description": "Let's discuss your project and see how we can help you create something amazing. We're always excited to work on new challenges.",
+      "getInTouch": "Get In Touch",
+      "title": "Ready to bring your idea to life?",
+      "viewPortfolio": "View Our Portfolio"
+    },
+    "description": "We are a software development company creating innovative web applications and digital solutions. From e-commerce platforms to educational tools, we bring your ideas to life with cutting-edge technology.",
+    "hero": {
+      "getInTouch": "Get In Touch",
+      "viewPortfolio": "View Our Portfolio"
+    },
+    "links": {
+      "dashboard": "My Dashboard"
+    },
+    "sections": {
+      "developmentExpertise": {
+        "description": "We specialize in creating modern, scalable web applications using the latest technologies. From concept to deployment, we handle every aspect of your digital project.",
+        "features": {
+          "ecommerce": {
+            "description": "Custom e-commerce platforms with payment integration, inventory management, and user-friendly interfaces.",
+            "name": "E-commerce Solutions"
+          },
+          "fullStack": {
+            "description": "Complete web application development from frontend to backend, using modern frameworks and best practices.",
+            "name": "Full-Stack Development"
+          },
+          "mobileFirst": {
+            "description": "Responsive applications that work perfectly on all devices, with a focus on user experience and performance.",
+            "name": "Mobile-First Design"
+          }
+        },
+        "title": "Our Development Expertise"
+      },
+      "whyChoose": {
+        "description": "We combine technical expertise with creative vision to deliver solutions that not only meet your requirements but exceed your expectations.",
+        "features": {
+          "modernTech": {
+            "description": "We use cutting-edge technologies like Vue, Nuxt, Node.js, Asp.Net Core, and cloud platforms to build future-proof applications.",
+            "name": "Modern Technologies"
+          },
+          "provenResults": {
+            "description": "Our portfolio includes successful projects for various industries, from educational tools to marketplace platforms.",
+            "name": "Proven Results"
+          },
+          "smallTeam": {
+            "description": "As a small company, we provide personalized attention and direct communication with our development team.",
+            "name": "Small Team, Big Impact"
+          }
+        },
+        "title": "Why Choose Ludulicious"
+      }
+    },
+    "services": {
+      "description": "From initial concept to final deployment, we provide comprehensive software development services tailored to your business needs.",
+      "items": {
+        "api": {
+          "description": "RESTful APIs endpoints that power your applications and enable third-party integrations.",
+          "title": "API Development"
+        },
+        "cloud": {
+          "description": "Scalable cloud solutions using AWS, Google Cloud, Azure, Vercel, Coolify or Dokploy with automated deployment and monitoring.",
+          "title": "Cloud Deployment"
+        },
+        "maintenance": {
+          "description": "Ongoing maintenance, updates, and technical support to keep your applications running smoothly.",
+          "title": "Maintenance & Support"
+        },
+        "marketplace": {
+          "description": "Complete marketplace solutions with advanced search and filtering capabilities and advanced bidding system.",
+          "title": "Marketplace Platforms"
+        },
+        "webApp": {
+          "description": "Custom web applications built with modern frameworks like Vue.js, Nuxt.js and Asp.Net Core for optimal performance and user experience.",
+          "title": "Web Application Development"
+        }
+      },
+      "title": "Our Services"
+    },
+    "testimonials": {
+      "description": "Don't just take our word for it. Here's what our clients have to say about working with Ludulicious.",
+      "headline": "Client Success Stories",
+      "title": "What Our Clients Say"
+    },
+    "title": "Ludulicious - Innovative Software Solutions"
+  },
+  "myOrganizations": {
+    "title": "My Organizations",
+    "description": "Manage your organizations and switch between them"
+  },
+  "login": {
+    "description": "Don't have an account?",
+    "errors": {
+      "emailNotVerified": "Email not verified",
+      "githubError": "Could not initiate GitHub login.",
+      "invalidCredentials": "Invalid email or password.",
+      "unexpectedError": "An unexpected error occurred. Please try again."
+    },
+    "fields": {
+      "email": "Email",
+      "emailPlaceholder": "Enter your email",
+      "password": "Password",
+      "passwordPlaceholder": "Enter your password",
+      "remember": "Remember me"
+    },
+    "footer": "By signing in, you agree to our",
+    "forgotPassword": "Forgot password?",
+    "providers": {
+      "github": "GitHub",
+      "githubDescription": "Login with GitHub",
+      "google": "Google",
+      "googleDescription": "Login with Google"
+    },
+    "signupLink": "Sign up",
+    "submitButton": "Sign in",
+    "success": "Login is succesful, loading next page....",
+    "termsLink": "Terms of Service",
+    "title": "Welcome back",
+    "validation": {
+      "invalidEmail": "Invalid email",
+      "passwordMinLength": "Must be at least 8 characters"
+    }
+  },
+  "nav": {
+    "admin": "Admin",
+    "blog": "Blog",
+    "contact": "Contact",
+    "dashboard": "Dashboard",
+    "language": "Language",
+    "myOrganization": "My Organisation",
+    "organization": "Organization",
+    "portfolio": "Portfolio",
+    "profile": "Profile"
+  },
+  "organization": {
+    "settings": {
+      "editTitle": "Edit organization",
+      "editButton": "Edit organization",
+      "nameLabel": "Organization Name",
+      "namePlaceholder": "Organization name",
+      "slugLabel": "Organization Slug",
+      "slugPlaceholder": "organization-slug",
+      "slugHint": "URL-friendly identifier for your organization",
+      "slugChecking": "Checking availability...",
+      "slugAvailable": "Slug is available",
+      "slugUnavailable": "Slug is already in use",
+      "slugError": "Unable to check slug availability",
+      "logoLabel": "Organization Logo",
+      "logoChoose": "Choose logo",
+      "logoHint": "Upload a PNG, JPG, or GIF. Recommended size: 280×160.",
+      "ownerOnly": "Only organization owners can edit name or slug.",
+      "errors": {
+        "loadFailed": "Failed to load organization",
+        "updateFailed": "Failed to update organization",
+        "slugTaken": "Organization slug is already taken"
+      },
+      "validation": {
+        "nameRequired": "Organization name is required",
+        "slugRequired": "Organization slug is required",
+        "slugInvalid": "Slug must be lowercase letters, numbers, and hyphens only",
+        "logoInvalid": "Logo must be a valid URL"
+      }
+    },
+    "members": {
+      "loading": "Loading organization data...",
+      "title": "Members",
+      "empty": "No members yet",
+      "email": "Email",
+      "name": "Name",
+      "role": "Role",
+      "invitations": {
+        "title": "Invitations",
+        "empty": "No pending invitations",
+        "status": "Status",
+        "expires": "Expires",
+        "actions": "Actions",
+        "resend": "Resend",
+        "delete": "Delete",
+        "inviteButton": "Invite Member",
+        "modalTitle": "Invite Member",
+        "emailLabel": "Email Address",
+        "emailPlaceholder": "Enter the email address of the member",
+        "roleLabel": "Role",
+        "roleMember": "Member",
+        "roleAdmin": "Admin",
+        "sendButton": "Send Invitation",
+        "sendSuccess": "Invitation sent successfully",
+        "cancel": "Cancel",
+        "confirmResend": {
+          "title": "Resend Invitation",
+          "message": "Are you sure you want to resend the invitation to {email} as {role}?",
+          "confirm": "Resend"
+        },
+        "confirmDelete": {
+          "title": "Delete Invitation",
+          "message": "Are you sure you want to delete this invitation? This action cannot be undone.",
+          "confirm": "Delete"
+        },
+        "resendSuccess": "Invitation resent successfully",
+        "deleteSuccess": "Invitation deleted successfully"
+      },
+      "errors": {
+        "noActiveOrganization": "No active organization found",
+        "onlyOwnerCanManage": "Only organization owners can manage members",
+        "loadFailed": "Failed to load organization data",
+        "sendInvitationFailed": "Failed to send invitation",
+        "resendFailed": "Failed to resend invitation",
+        "cancelFailed": "Failed to cancel invitation"
+      },
+      "confirm": {
+        "cancelInvitation": "Are you sure you want to cancel this invitation?"
+      },
+      "validation": {
+        "emailInvalid": "Invalid email address",
+        "roleRequired": "Role is required"
+      }
+    }
+  },
+  "profile": {
+    "badges": {
+      "active": "Active"
+    },
+    "buttons": {
+      "setActive": "Set active"
+    },
+    "description": "Manage your personal information and profile settings",
+    "fields": {
+      "email": "Email",
+      "emailDescription": "Your email address cannot be changed",
+      "name": "Name",
+      "nameDescription": "Your display name",
+      "namePlaceholder": "Enter your name",
+      "profilePicture": "Profile Picture",
+      "profilePictureDescription": "JPG, GIF or PNG. 1MB Max.",
+      "profilePicturePlaceholder": "https://example.com/avatar.jpg",
+      "chooseAvatar": "Choose"
+    },
+    "messages": {
+      "error": "Error",
+      "failedToActivateOrganization": "Failed to activate organization",
+      "organizationActivated": "Organization activated successfully",
+      "profileUpdated": "Your profile has been updated successfully",
+      "success": "Success",
+      "updateFailed": "Failed to update profile"
+    },
+    "sections": {
+      "organizations": "My organizations",
+      "profileInfo": "Profile Information"
+    },
+    "title": "Profile Settings",
+    "validation": {
+      "atLeastOneField": "At least one field (name or image) must be provided",
+      "imageInvalidUrl": "Image must be a valid URL",
+      "nameMaxLength": "Name must be less than 255 characters",
+      "nameRequired": "Name is required"
+    }
+  },
+  "signup": {
+    "description": "Already have an account?",
+    "invitation": {
+      "title": "You've been invited to join {organizationName}",
+      "description": "You'll be added as a {role} after creating your account.",
+      "accepting": "Accepting invitation as {role}...",
+      "accepted": {
+        "title": "Invitation Accepted",
+        "description": "You have been successfully added to the organization."
+      },
+      "loggedIn": {
+        "accepting": "Accepting invitation...",
+        "success": "Successfully joined {organizationName} as {role}",
+        "emailMismatch": "This invitation was sent to a different email address. Please log out and use the email address the invitation was sent to.",
+        "error": "Failed to accept invitation: {error}"
+      }
+    },
+    "errors": {
+      "errorTitle": "Error",
+      "unknownError": "An unknown error occurred during signup."
+    },
+    "fields": {
+      "email": "Email",
+      "emailPlaceholder": "Enter your email",
+      "name": "Name",
+      "namePlaceholder": "Enter your name",
+      "password": "Password",
+      "passwordPlaceholder": "Enter your password"
+    },
+    "footer": "By signing up, you agree to our",
+    "loginLink": "Login",
+    "providers": {
+      "github": "GitHub",
+      "githubDescription": "Login with GitHub",
+      "google": "Google",
+      "googleDescription": "Login with Google"
+    },
+    "submitButton": "Create account",
+    "termsLink": "Terms of Service",
+    "title": "Create an account",
+    "validation": {
+      "invalidEmail": "Invalid email",
+      "nameRequired": "Name is required",
+      "passwordMinLength": "Must be at least 8 characters"
+    }
+  },
+  "verify": {
+    "backToLogin": "Back to Login",
+    "codePlaceholder": "000000",
+    "codeSent": "Verification code sent!",
+    "enterCode": "Verification Code",
+    "error": "Verification failed",
+    "invalidCode": "Invalid verification code",
+    "invalidCodeLength": "Please enter a 6-digit code",
+    "resendCode": "Resend Code",
+    "resendError": "Failed to resend code",
+    "resendIn": "Resend in {seconds}s",
+    "subtitle": "Enter the 6-digit code sent to {email}",
+    "success": "Email verified successfully!",
+    "title": "Verify Your Email",
+    "verifyButton": "Verify Email"
+  }
+}

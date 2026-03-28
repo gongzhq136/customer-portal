@@ -1,0 +1,750 @@
+{
+  "admin": {
+    "dashboard": {
+      "description": "Beheer organisaties en gebruikers",
+      "organizations": "Organisaties",
+      "title": "Beheerders Dashboard",
+      "users": "Gebruikers"
+    },
+    "errors": {
+      "accessRequired": "Beheerders toegang vereist",
+      "failedToLoadUsers": "Gebruikers laden mislukt",
+      "failedToUpdateRole": "Gebruikersrol bijwerken mislukt",
+      "cannotChangeOwnRole": "Je kunt je eigen rol niet wijzigen"
+    },
+    "organization": {
+      "title": "Organisatie details",
+      "create": {
+        "title": "Organisatie Aanmaken",
+        "back": "Terug",
+        "name": "Organisatienaam",
+        "namePlaceholder": "Voer organisatienaam in",
+        "slug": "Organisatie Slug",
+        "slugPlaceholder": "organisatie-slug",
+        "slugHint": "URL-vriendelijke identifier voor je organisatie",
+        "createButton": "Organisatie Aanmaken",
+        "cancel": "Annuleren",
+        "errors": {
+          "createFailed": "Organisatie aanmaken mislukt"
+        },
+        "validation": {
+          "nameRequired": "Organisatienaam is verplicht",
+          "slugRequired": "Organisatie slug is verplicht",
+          "slugInvalid": "Slug mag alleen kleine letters, cijfers en streepjes bevatten"
+        }
+      },
+      "detail": {
+        "back": "Terug naar Organisaties",
+        "backToMyOrganizations": "Terug naar mijn organisaties",
+        "loading": "Organisatie laden...",
+        "title": "Organisatie Details",
+        "name": "Naam:",
+        "slug": "Slug:",
+        "created": "Aangemaakt:",
+        "members": {
+          "title": "Leden",
+          "empty": "Nog geen leden",
+          "email": "E-mail",
+          "name": "Naam",
+          "role": "Rol"
+        },
+        "invitations": {
+          "title": "Uitnodigingen",
+          "empty": "Geen openstaande uitnodigingen",
+          "email": "E-mail",
+          "role": "Rol",
+          "status": "Status",
+          "expires": "Verloopt",
+          "actions": "Acties",
+          "resend": "Opnieuw Verzenden",
+          "delete": "Verwijderen",
+          "inviteMember": "Lid Uitnodigen",
+          "modalTitle": "Organisatie Lid Uitnodigen",
+          "emailLabel": "E-mailadres",
+          "emailPlaceholder": "Voer het e-mailadres in",
+          "roleLabel": "Rol",
+          "roleRequired": "Rol is verplicht",
+          "roleOwner": "Eigenaar",
+          "roleAdmin": "Beheerder",
+          "roleMember": "Lid",
+          "sendButton": "Uitnodiging Verzenden",
+          "sendSuccess": "Uitnodiging succesvol verzonden",
+          "cancel": "Annuleren",
+          "confirmResend": {
+            "title": "Uitnodiging Opnieuw Verzenden",
+            "message": "Weet je zeker dat je de uitnodiging naar {email} als {role} wilt opnieuw verzenden?",
+            "confirm": "Opnieuw Verzenden"
+          },
+          "confirmDelete": {
+            "title": "Uitnodiging Verwijderen",
+            "message": "Weet je zeker dat je deze uitnodiging wilt verwijderen? Deze actie kan niet ongedaan worden gemaakt.",
+            "confirm": "Verwijderen"
+          },
+          "resendSuccess": "Uitnodiging succesvol opnieuw verzonden",
+          "deleteSuccess": "Uitnodiging succesvol verwijderd"
+        },
+        "errors": {
+          "loadFailed": "Organisatie laden mislukt",
+          "sendInvitationFailed": "Uitnodiging verzenden mislukt",
+          "resendFailed": "Uitnodiging opnieuw verzenden mislukt",
+          "cancelFailed": "Uitnodiging annuleren mislukt"
+        },
+        "confirm": {
+          "cancelInvitation": "Weet je zeker dat je deze uitnodiging wilt annuleren?"
+        }
+      },
+      "list": {
+        "title": "Alle Organisaties",
+        "createButton": "Organisatie Aanmaken",
+        "loading": "Organisaties laden...",
+        "empty": "Geen organisaties gevonden",
+        "view": "Bekijken"
+      }
+    },
+    "roles": {
+      "admin": "beheerder",
+      "user": "gebruiker"
+    },
+    "table": {
+      "actions": "Acties",
+      "created": "Aangemaakt",
+      "email": "E-mail",
+      "name": "Naam",
+      "noDataFound": "Geen gebruikers gevonden",
+      "notAvailable": "N.v.t.",
+      "role": "Rol",
+      "title": "Alle Gebruikers",
+      "verified": "Geverifieerd"
+    },
+    "verification": {
+      "pending": "In behandeling",
+      "verified": "Geverifieerd"
+    },
+    "user": {
+      "updateRole": {
+        "title": "Rol Wijzigen",
+        "description": "Wijzig de rol voor deze gebruiker",
+        "confirm": "Rol Wijzigen",
+        "success": "Rol succesvol gewijzigd",
+        "error": "Rol wijzigen mislukt"
+      },
+      "ban": {
+        "title": "Gebruiker Blokkeren",
+        "description": "Blokkeer deze gebruiker om toegang te krijgen tot de applicatie",
+        "reason": "Blokkeringsreden",
+        "reasonPlaceholder": "Voer reden voor blokkering in (optioneel)",
+        "expiresIn": "Blokkering Verloopt Over",
+        "expiresInDays": "Dagen",
+        "expiresInHours": "Uren",
+        "expiresInMinutes": "Minuten",
+        "never": "Nooit",
+        "confirm": "Gebruiker Blokkeren",
+        "success": "Gebruiker succesvol geblokkeerd",
+        "error": "Gebruiker blokkeren mislukt",
+        "cannotBanAdmin": "Admin gebruikers kunnen niet worden geblokkeerd"
+      },
+      "unban": {
+        "title": "Gebruiker Deblokkeren",
+        "description": "Verwijder de blokkering van deze gebruiker",
+        "confirm": "Gebruiker Deblokkeren",
+        "success": "Gebruiker succesvol gedeblokkeerd",
+        "error": "Gebruiker deblokkeren mislukt"
+      },
+      "impersonate": {
+        "title": "Gebruiker Impersoneren",
+        "description": "Je wordt ingelogd als deze gebruiker. Alle acties worden uitgevoerd namens hen.",
+        "warning": "Waarschuwing: Het impersoneren van een gebruiker geeft je volledige toegang tot hun account.",
+        "confirm": "Impersoneren",
+        "success": "Impersonatie succesvol gestart",
+        "error": "Impersonatie starten mislukt",
+        "stop": "Stop Impersoneren",
+        "stopSuccess": "Impersonatie succesvol gestopt",
+        "stopError": "Impersonatie stoppen mislukt",
+        "indicator": "Je impersoneert momenteel een gebruiker"
+      },
+      "sessions": {
+        "title": "Gebruikerssessies",
+        "description": "Beheer actieve sessies voor deze gebruiker",
+        "noSessions": "Geen actieve sessies",
+        "revoke": "Sessie Intrekken",
+        "revokeAll": "Alle Sessies Intrekken",
+        "revokeSuccess": "Sessie succesvol ingetrokken",
+        "revokeAllSuccess": "Alle sessies succesvol ingetrokken",
+        "revokeError": "Sessie intrekken mislukt",
+        "cannotRevokeCurrentSession": "Je kunt je huidige sessie niet intrekken",
+        "currentSession": "Huidige Sessie",
+        "ipAddress": "IP-adres",
+        "userAgent": "User Agent",
+        "createdAt": "Aangemaakt",
+        "expiresAt": "Verloopt",
+        "active": "Actief",
+        "expired": "Verlopen"
+      },
+      "password": {
+        "title": "Wachtwoord Wijzigen",
+        "description": "Stel een nieuw wachtwoord in voor deze gebruiker",
+        "newPassword": "Nieuw Wachtwoord",
+        "newPasswordPlaceholder": "Voer nieuw wachtwoord in",
+        "confirm": "Wachtwoord Wijzigen",
+        "success": "Wachtwoord succesvol gewijzigd",
+        "error": "Wachtwoord wijzigen mislukt"
+      },
+      "update": {
+        "title": "Gebruiker Bijwerken",
+        "description": "Gebruikersinformatie bijwerken",
+        "name": "Naam",
+        "image": "Profielfoto URL",
+        "imagePlaceholder": "https://voorbeeld.nl/avatar.jpg",
+        "confirm": "Gebruiker Bijwerken",
+        "success": "Gebruiker succesvol bijgewerkt",
+        "error": "Gebruiker bijwerken mislukt"
+      },
+      "actions": {
+        "ban": "Gebruiker Blokkeren",
+        "unban": "Gebruiker Deblokkeren",
+        "impersonate": "Impersoneren",
+        "sessions": "Sessies Bekijken",
+        "changePassword": "Wachtwoord Wijzigen",
+        "update": "Gebruiker Bijwerken"
+      },
+      "status": {
+        "banned": "Geblokkeerd",
+        "notBanned": "Actief"
+      }
+    }
+  },
+  "common": {
+    "refresh": "Verversen",
+    "cancel": "Annuleren",
+    "close": "Sluiten",
+    "createdAt": "Aangemaakt op",
+    "delete": "Verwijderen",
+    "descending": "Aflopend",
+    "direction": "Richting",
+    "edit": "Bewerken",
+    "error": "Er is een fout opgetreden",
+    "learnMore": "Meer informatie",
+    "loaded": "Geladen",
+    "loading": "Laden...",
+    "readMore": "Lees meer",
+    "reset": "Resetten",
+    "confirm": "Bevestigen",
+    "save": "Opslaan",
+    "sort": "Sorteren",
+    "sortBy": "Sorteren op",
+    "success": "Succesvol!",
+    "totalRecords": "Totaal records",
+    "searchPlaceholder": "Zoeken...",
+    "ascending": "Oplopend",
+    "view": "Bekijken"
+  },
+  "menu": {
+    "dashboard": "Dashboard",
+    "serviceRequests": {
+      "title": "Service Requests"
+    },
+    "inbox": "Inbox",
+    "customers": "Customers",
+    "helpSupport": "Help & Support",
+    "feedback": "Feedback",
+    "home": "Home",
+    "documentation": "Documentation",
+    "profile": "Profiel",
+    "theme": "Thema",
+    "settings": {
+      "title": "Instellingen",
+      "profile": "Profiel",
+      "organization": "Organisatie",
+      "notifications": "Notificaties",
+      "security": "Beveiliging"
+    },
+    "logout": "Uitloggen"
+  },
+  "settings": {
+    "title": "Instellingen",
+    "profile": "Profiel",
+    "organization": "Organisatie",
+    "notifications": "Notificaties",
+    "security": "Beveiliging"
+  },
+  "security": {
+    "password": {
+      "title": "Wachtwoord",
+      "description": "Bevestig uw huidige wachtwoord voordat u een nieuw wachtwoord instelt.",
+      "currentPassword": "Huidig wachtwoord",
+      "currentPasswordPlaceholder": "Voer uw huidige wachtwoord in",
+      "newPassword": "Nieuw wachtwoord",
+      "newPasswordPlaceholder": "Voer uw nieuwe wachtwoord in",
+      "updateButton": "Wachtwoord bijwerken",
+      "validation": {
+        "currentPasswordRequired": "Huidig wachtwoord is verplicht",
+        "newPasswordRequired": "Nieuw wachtwoord is verplicht",
+        "passwordsMustBeDifferent": "Nieuw wachtwoord moet verschillen van het huidige wachtwoord",
+        "passwordsMustBeDifferentShort": "Wachtwoorden moeten verschillend zijn"
+      },
+      "success": "Wachtwoord succesvol gewijzigd",
+      "error": "Wachtwoord wijzigen mislukt"
+    },
+    "account": {
+      "title": "Account beëindigen",
+      "description": "Wilt u onze service niet meer gebruiken? U kunt hier uw account verwijderen. Deze actie kan niet ongedaan worden gemaakt. Alle informatie met betrekking tot dit account wordt permanent verwijderd.",
+      "deleteButton": "Account verwijderen",
+      "deleteRequested": "Accountverwijdering aangevraagd",
+      "deleteRequestedDescription": "We hebben u een verificatie-e-mail gestuurd. Controleer uw e-mail en klik op de link om het accountverwijderingsproces te voltooien.",
+      "delete": {
+        "confirmTitle": "Accountverwijdering bevestigen",
+        "confirmMessage": "Weet u zeker dat u uw account wilt verwijderen? Deze actie kan niet ongedaan worden gemaakt.",
+        "passwordRequired": "Voer uw wachtwoord in om accountverwijdering te bevestigen",
+        "passwordPlaceholder": "Voer uw wachtwoord in",
+        "deleteButton": "Account verwijderen",
+        "cancelButton": "Annuleren",
+        "success": "Account succesvol verwijderd",
+        "error": "Account verwijderen mislukt",
+        "emailVerificationSent": "Verificatie-e-mail verzonden. Controleer uw e-mail om de accountverwijdering te voltooien."
+      }
+    }
+  },
+  "contact": {
+    "cards": {
+      "email": {
+        "description": "Stuur ons een e-mail en wij reageren binnen 24 uur",
+        "title": "E-mail Ons"
+      },
+      "follow": {
+        "description": "Verbind met ons op sociale media",
+        "title": "Volg Ons"
+      },
+      "phone": {
+        "description": "Spreek direct met ons team",
+        "title": "Bel Ons"
+      },
+      "visit": {
+        "description": "Gevestigd in Rotterdam, Nederland",
+        "title": "Bezoek Ons"
+      }
+    },
+    "company": {
+      "description": "ApexPro levert betrouwbare schoonmaak-, onderhouds- en coördinatiediensten voor bedrijven, ondersteund door een modern en transparant klantenportaal.",
+      "experience": "15+ jaar",
+      "founded": "2010",
+      "name": "ApexPro",
+      "tagline": "Facilitaire diensten voor bedrijven"
+    },
+    "cta": {
+      "description": "Neem contact op met verkoop voor diensten en offertes, of met portaalondersteuning.",
+      "sales": "Contact verkoop",
+      "support": "Portaalondersteuning",
+      "title": "Waarmee kunnen we helpen?"
+    },
+    "description": "Wij helpen graag met diensten, offertes en portaalondersteuning.",
+    "info": {
+      "address": "Commerce Ave 1200, Suite 500, Rotterdam, NL",
+      "phone": "+31 10 123 4567"
+    },
+    "title": "Contact met ApexPro"
+  },
+  "dashboard": {
+    "activity": {
+      "recentActivity": "Recente Activiteit"
+    },
+    "buttons": {
+      "export": "Exporteren",
+      "generateReport": "Rapport Genereren",
+      "newOrder": "Nieuwe Order",
+      "newRequest": "Nieuw Verzoek",
+      "viewAll": "Bekijk Alles",
+      "viewAllOrders": "Bekijk Alle Orders",
+      "viewInvoices": "Bekijk Facturen"
+    },
+    "cards": {
+      "completed": "voltooid",
+      "invoices": "Facturen",
+      "overdue": "achterstallig",
+      "paid": "betaald",
+      "pending": "in behandeling",
+      "satisfaction": "Tevredenheid",
+      "slaCompliance": "SLA Naleving",
+      "totalOrders": "Totaal Orders"
+    },
+    "charts": {
+      "chartPlaceholder": "Grafiek visualisatie zou hier komen",
+      "integrationNote": "Integratie met grafiek bibliotheek nodig",
+      "ordersCompleted": "Orders Voltooid",
+      "slaChartPlaceholder": "SLA prestaties grafiek zou hier komen",
+      "slaPerformance": "SLA Prestaties"
+    },
+    "seo": {
+      "description": "Beheer je facilitaire diensten, orders en facturen met ApexPro",
+      "title": "Dashboard - ApexPro Portaal"
+    },
+    "stats": {
+      "avgResolutionTime": "Gem. Oplostijd",
+      "avgResponseTime": "Gem. Reactietijd",
+      "quickActions": "Snelle Acties"
+    },
+    "title": "Dashboard",
+    "welcome": "Welkom terug! Hier is wat er gebeurt met je facilitaire diensten."
+  },
+  "footer": {
+    "copyright": "Alle rechten voorbehouden."
+  },
+  "forgotPassword": {
+    "buttons": {
+      "backToLogin": "Terug naar Inloggen",
+      "resendCode": "Code Opnieuw Verzenden",
+      "resetPassword": "Wachtwoord Resetten",
+      "sendCode": "Code Verzenden"
+    },
+    "description": "Voer je e-mailadres in en wij sturen je een verificatiecode om je wachtwoord te resetten.",
+    "fields": {
+      "confirmPassword": "Bevestig Wachtwoord",
+      "confirmPasswordPlaceholder": "Bevestig je nieuwe wachtwoord",
+      "email": "E-mailadres",
+      "emailPlaceholder": "Voer je e-mailadres in",
+      "newPassword": "Nieuw Wachtwoord",
+      "newPasswordPlaceholder": "Voer je nieuwe wachtwoord in",
+      "otp": "Verificatiecode",
+      "otpPlaceholder": "000000"
+    },
+    "messages": {
+      "codeSent": "Verificatiecode verzonden naar je e-mail!",
+      "invalidCode": "Ongeldige verificatiecode",
+      "passwordReset": "Wachtwoord succesvol gereset! Doorverwijzen naar inloggen...",
+      "resendError": "Code opnieuw verzenden mislukt",
+      "resendIn": "Opnieuw verzenden over {seconds}s",
+      "resetError": "Wachtwoord resetten mislukt",
+      "userNotFound": "Geen account gevonden met dit e-mailadres"
+    },
+    "step2Description": "Voer de 6-cijferige code in die is verzonden naar {email} en je nieuwe wachtwoord.",
+    "title": "Reset Je Wachtwoord",
+    "validation": {
+      "confirmPasswordRequired": "Bevestig je wachtwoord",
+      "emailRequired": "E-mailadres is verplicht",
+      "invalidEmail": "Voer een geldig e-mailadres in",
+      "otpLength": "Voer een 6-cijferige code in",
+      "otpRequired": "Verificatiecode is verplicht",
+      "passwordMinLength": "Wachtwoord moet minimaal 8 tekens zijn",
+      "passwordRequired": "Wachtwoord is verplicht",
+      "passwordsMatch": "Wachtwoorden moeten overeenkomen"
+    }
+  },
+  "home": {
+    "cta": {
+      "description": "Laten we je project bespreken en kijken hoe wij je kunnen helpen iets geweldigs te creëren. Wij zijn altijd enthousiast om aan nieuwe uitdagingen te werken.",
+      "getInTouch": "Neem Contact Op",
+      "title": "Klaar om je idee tot leven te brengen?",
+      "viewPortfolio": "Bekijk Ons Portfolio"
+    },
+    "description": "Wij zijn een softwareontwikkelingsbedrijf dat innovatieve webapplicaties en digitale oplossingen creëert. Van e-commerce platforms tot educatieve tools, wij brengen je ideeën tot leven met geavanceerde technologie.",
+    "hero": {
+      "getInTouch": "Neem Contact Op",
+      "viewPortfolio": "Bekijk Ons Portfolio"
+    },
+    "links": {
+      "dashboard": "Mijn Dashboard"
+    },
+    "sections": {
+      "developmentExpertise": {
+        "description": "Wij specialiseren ons in het creëren van moderne, schaalbare webapplicaties met de nieuwste technologieën. Van concept tot implementatie, wij beheren elk aspect van je digitale project.",
+        "features": {
+          "ecommerce": {
+            "description": "Aangepaste e-commerce platforms met betalingsintegratie, voorraadbeheer en gebruiksvriendelijke interfaces.",
+            "name": "E-commerce Oplossingen"
+          },
+          "fullStack": {
+            "description": "Volledige webapplicatie-ontwikkeling van frontend tot backend, met moderne frameworks en best practices.",
+            "name": "Full-Stack Ontwikkeling"
+          },
+          "mobileFirst": {
+            "description": "Responsieve applicaties die perfect werken op alle apparaten, met focus op gebruikerservaring en prestaties.",
+            "name": "Mobile-First Ontwerp"
+          }
+        },
+        "title": "Onze Ontwikkelingsexpertise"
+      },
+      "whyChoose": {
+        "description": "Wij combineren technische expertise met creatieve visie om oplossingen te leveren die niet alleen aan je vereisten voldoen, maar deze overtreffen.",
+        "features": {
+          "modernTech": {
+            "description": "Wij gebruiken geavanceerde technologieën zoals Vue, Nuxt, Node.js, Asp.Net Core en cloud platforms om toekomstbestendige applicaties te bouwen.",
+            "name": "Moderne Technologieën"
+          },
+          "provenResults": {
+            "description": "Ons portfolio omvat succesvolle projecten voor verschillende industrieën, van educatieve tools tot marketplace platforms.",
+            "name": "Bewezen Resultaten"
+          },
+          "smallTeam": {
+            "description": "Als klein bedrijf bieden wij persoonlijke aandacht en directe communicatie met ons ontwikkelteam.",
+            "name": "Klein Team, Grote Impact"
+          }
+        },
+        "title": "Waarom Kiezen voor Ludulicious"
+      }
+    },
+    "services": {
+      "description": "Van eerste concept tot finale implementatie, wij bieden uitgebreide softwareontwikkelingsdiensten afgestemd op je bedrijfsbehoeften.",
+      "items": {
+        "api": {
+          "description": "RESTful API endpoints die je applicaties aandrijven en third-party integraties mogelijk maken.",
+          "title": "API Ontwikkeling"
+        },
+        "cloud": {
+          "description": "Schaalbare cloud oplossingen met AWS, Google Cloud, Azure, Vercel, Coolify of Dokploy met geautomatiseerde implementatie en monitoring.",
+          "title": "Cloud Implementatie"
+        },
+        "maintenance": {
+          "description": "Doorlopend onderhoud, updates en technische ondersteuning om je applicaties soepel te laten draaien.",
+          "title": "Onderhoud & Ondersteuning"
+        },
+        "marketplace": {
+          "description": "Volledige marketplace oplossingen met geavanceerde zoek- en filtermogelijkheden en geavanceerd biedsysteem.",
+          "title": "Marketplace Platforms"
+        },
+        "webApp": {
+          "description": "Aangepaste webapplicaties gebouwd met moderne frameworks zoals Vue.js, Nuxt.js en Asp.Net Core voor optimale prestaties en gebruikerservaring.",
+          "title": "Webapplicatie Ontwikkeling"
+        }
+      },
+      "title": "Onze Diensten"
+    },
+    "testimonials": {
+      "description": "Geloof ons niet zomaar. Hier is wat onze klanten zeggen over het werken met Ludulicious.",
+      "headline": "Klant Succesverhalen",
+      "title": "Wat Onze Klanten Zeggen"
+    },
+    "title": "Ludulicious - Innovatieve Software Oplossingen"
+  },
+  "myOrganizations": {
+    "title": "Mijn Organisaties",
+    "description": "Beheer je organisaties en wissel tussen hen"
+  },
+  "login": {
+    "description": "Heb je nog geen account?",
+    "errors": {
+      "emailNotVerified": "E-mail niet geverifieerd",
+      "githubError": "GitHub inloggen kon niet worden gestart.",
+      "invalidCredentials": "Ongeldig e-mailadres of wachtwoord.",
+      "unexpectedError": "Er is een onverwachte fout opgetreden. Probeer het opnieuw."
+    },
+    "fields": {
+      "email": "E-mail",
+      "emailPlaceholder": "Voer je e-mail in",
+      "password": "Wachtwoord",
+      "passwordPlaceholder": "Voer je wachtwoord in",
+      "remember": "Onthoud mij"
+    },
+    "footer": "Door in te loggen, ga je akkoord met onze",
+    "forgotPassword": "Wachtwoord vergeten?",
+    "providers": {
+      "github": "GitHub",
+      "githubDescription": "Inloggen met GitHub",
+      "google": "Google",
+      "googleDescription": "Inloggen met Google"
+    },
+    "signupLink": "Aanmelden",
+    "submitButton": "Inloggen",
+    "success": "Inloggen is gelukt, volgende pagina wordt geladen....",
+    "termsLink": "Servicevoorwaarden",
+    "title": "Welkom terug",
+    "validation": {
+      "invalidEmail": "Ongeldig e-mailadres",
+      "passwordMinLength": "Moet minimaal 8 tekens zijn"
+    }
+  },
+  "nav": {
+    "admin": "Beheer",
+    "blog": "Blog",
+    "contact": "Contact",
+    "dashboard": "Dashboard",
+    "language": "Taal",
+    "myOrganization": "Mijn Organisatie",
+    "organization": "Organisatie",
+    "portfolio": "Portfolio",
+    "profile": "Profiel"
+  },
+  "organization": {
+    "settings": {
+      "editTitle": "Organisatie bewerken",
+      "editButton": "Organisatie bewerken",
+      "nameLabel": "Organisatienaam",
+      "namePlaceholder": "Organisatienaam",
+      "slugLabel": "Organisatie Slug",
+      "slugPlaceholder": "organisatie-slug",
+      "slugHint": "URL-vriendelijke identifier voor je organisatie",
+      "slugChecking": "Beschikbaarheid controleren...",
+      "slugAvailable": "Slug is beschikbaar",
+      "slugUnavailable": "Slug is al in gebruik",
+      "slugError": "Slug beschikbaarheid controleren mislukt",
+      "logoLabel": "Organisatielogo",
+      "logoChoose": "Logo kiezen",
+      "logoHint": "Upload een PNG, JPG of GIF. Aanbevolen formaat: 280×160.",
+      "ownerOnly": "Alleen organisatie-eigenaren kunnen naam of slug wijzigen.",
+      "errors": {
+        "loadFailed": "Organisatie laden mislukt",
+        "updateFailed": "Organisatie bijwerken mislukt",
+        "slugTaken": "Organisatie slug is al in gebruik"
+      },
+      "validation": {
+        "nameRequired": "Organisatienaam is verplicht",
+        "slugRequired": "Organisatie slug is verplicht",
+        "slugInvalid": "Slug mag alleen kleine letters, cijfers en streepjes bevatten",
+        "logoInvalid": "Logo moet een geldige URL zijn"
+      }
+    },
+    "members": {
+      "loading": "Organisatiegegevens laden...",
+      "title": "Leden",
+      "empty": "Nog geen leden",
+      "email": "E-mail",
+      "name": "Naam",
+      "role": "Rol",
+      "invitations": {
+        "title": "Uitnodigingen",
+        "empty": "Geen openstaande uitnodigingen",
+        "status": "Status",
+        "expires": "Verloopt",
+        "actions": "Acties",
+        "resend": "Opnieuw Verzenden",
+        "delete": "Verwijderen",
+        "inviteButton": "Lid Uitnodigen",
+        "modalTitle": "Lid Uitnodigen",
+        "emailLabel": "E-mailadres",
+        "emailPlaceholder": "Voer het e-mailadres van het lid in",
+        "roleLabel": "Rol",
+        "roleMember": "Lid",
+        "roleAdmin": "Beheerder",
+        "sendButton": "Uitnodiging Verzenden",
+        "sendSuccess": "Uitnodiging succesvol verzonden",
+        "cancel": "Annuleren",
+        "confirmResend": {
+          "title": "Uitnodiging Opnieuw Verzenden",
+          "message": "Weet je zeker dat je de uitnodiging naar {email} als {role} wilt opnieuw verzenden?",
+          "confirm": "Opnieuw Verzenden"
+        },
+        "confirmDelete": {
+          "title": "Uitnodiging Verwijderen",
+          "message": "Weet je zeker dat je deze uitnodiging wilt verwijderen? Deze actie kan niet ongedaan worden gemaakt.",
+          "confirm": "Verwijderen"
+        },
+        "resendSuccess": "Uitnodiging succesvol opnieuw verzonden",
+        "deleteSuccess": "Uitnodiging succesvol verwijderd"
+      },
+      "errors": {
+        "noActiveOrganization": "Geen actieve organisatie gevonden",
+        "onlyOwnerCanManage": "Alleen organisatie-eigenaren kunnen leden beheren",
+        "loadFailed": "Organisatiegegevens laden mislukt",
+        "sendInvitationFailed": "Uitnodiging verzenden mislukt",
+        "resendFailed": "Uitnodiging opnieuw verzenden mislukt",
+        "cancelFailed": "Uitnodiging annuleren mislukt"
+      },
+      "confirm": {
+        "cancelInvitation": "Weet je zeker dat je deze uitnodiging wilt annuleren?"
+      },
+      "validation": {
+        "emailInvalid": "Ongeldig e-mailadres",
+        "roleRequired": "Rol is verplicht"
+      }
+    }
+  },
+  "profile": {
+    "badges": {
+      "active": "Actief"
+    },
+    "buttons": {
+      "setActive": "Activeren"
+    },
+    "description": "Beheer je persoonlijke informatie en profielinstellingen",
+    "fields": {
+      "email": "E-mail",
+      "emailDescription": "Je e-mailadres kan niet worden gewijzigd",
+      "name": "Naam",
+      "nameDescription": "Je weergavenaam",
+      "namePlaceholder": "Voer je naam in",
+      "profilePicture": "Profielfoto",
+      "profilePictureDescription": "JPG, GIF of PNG. Max. 1MB.",
+      "profilePicturePlaceholder": "https://voorbeeld.nl/avatar.jpg",
+      "chooseAvatar": "Kiezen"
+    },
+    "messages": {
+      "error": "Fout",
+      "failedToActivateOrganization": "Organisatie activeren mislukt",
+      "organizationActivated": "Organisatie succesvol geactiveerd",
+      "profileUpdated": "Je profiel is succesvol bijgewerkt",
+      "success": "Succes",
+      "updateFailed": "Profiel bijwerken mislukt"
+    },
+    "sections": {
+      "organizations": "Mijn organisaties",
+      "profileInfo": "Profielinformatie"
+    },
+    "title": "Profielinstellingen",
+    "validation": {
+      "atLeastOneField": "Ten minste één veld (naam of afbeelding) moet worden ingevuld",
+      "imageInvalidUrl": "Afbeelding moet een geldige URL zijn",
+      "nameMaxLength": "Naam moet minder dan 255 tekens zijn",
+      "nameRequired": "Naam is verplicht"
+    }
+  },
+  "signup": {
+    "description": "Heb je al een account?",
+    "invitation": {
+      "title": "Je bent uitgenodigd om lid te worden van {organizationName}",
+      "description": "Je wordt toegevoegd als {role} na het aanmaken van je account.",
+      "accepting": "Uitnodiging accepteren als {role}...",
+      "accepted": {
+        "title": "Uitnodiging Geaccepteerd",
+        "description": "Je bent succesvol toegevoegd aan de organisatie."
+      },
+      "loggedIn": {
+        "accepting": "Uitnodiging accepteren...",
+        "success": "Succesvol lid geworden van {organizationName} als {role}",
+        "emailMismatch": "Deze uitnodiging is verzonden naar een ander e-mailadres. Log uit en gebruik het e-mailadres waarop de uitnodiging is verzonden.",
+        "error": "Uitnodiging accepteren mislukt: {error}"
+      }
+    },
+    "errors": {
+      "errorTitle": "Fout",
+      "unknownError": "Er is een onbekende fout opgetreden tijdens het aanmelden."
+    },
+    "fields": {
+      "email": "E-mail",
+      "emailPlaceholder": "Voer je e-mail in",
+      "name": "Naam",
+      "namePlaceholder": "Voer je naam in",
+      "password": "Wachtwoord",
+      "passwordPlaceholder": "Voer je wachtwoord in"
+    },
+    "footer": "Door je aan te melden, ga je akkoord met onze",
+    "loginLink": "Inloggen",
+    "providers": {
+      "github": "GitHub",
+      "githubDescription": "Inloggen met GitHub",
+      "google": "Google",
+      "googleDescription": "Inloggen met Google"
+    },
+    "submitButton": "Account aanmaken",
+    "termsLink": "Servicevoorwaarden",
+    "title": "Maak een account aan",
+    "validation": {
+      "invalidEmail": "Ongeldig e-mailadres",
+      "nameRequired": "Naam is verplicht",
+      "passwordMinLength": "Moet minimaal 8 tekens zijn"
+    }
+  },
+  "verify": {
+    "backToLogin": "Terug naar Inloggen",
+    "codePlaceholder": "000000",
+    "codeSent": "Verificatiecode verzonden!",
+    "enterCode": "Verificatiecode",
+    "error": "Verificatie mislukt",
+    "invalidCode": "Ongeldige verificatiecode",
+    "invalidCodeLength": "Voer een 6-cijferige code in",
+    "resendCode": "Code Opnieuw Verzenden",
+    "resendError": "Code opnieuw verzenden mislukt",
+    "resendIn": "Opnieuw verzenden over {seconds}s",
+    "subtitle": "Voer de 6-cijferige code in die is verzonden naar {email}",
+    "success": "E-mail succesvol geverifieerd!",
+    "title": "Verifieer Je E-mail",
+    "verifyButton": "E-mail Verifiëren"
+  }
+}

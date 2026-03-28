@@ -1,0 +1,56 @@
+{
+  "serviceRequest": {
+    "title": "Serviceaanvragen",
+    "subTitle": "Bekijk en beheer alle serviceaanvragen",
+    "create": "Aanvraag Maken",
+    "edit": "Aanvraag Bewerken",
+    "delete": "Aanvraag Verwijderen",
+    "status": {
+      "open": "Open",
+      "in_progress": "In Behandeling",
+      "resolved": "Opgelost",
+      "closed": "Gesloten"
+    },
+    "statusBadge": {
+      "open": "Open",
+      "in_progress": "In Behandeling",
+      "resolved": "Opgelost",
+      "closed": "Gesloten"
+    },
+    "priority": {
+      "low": "Laag",
+      "medium": "Gemiddeld",
+      "high": "Hoog",
+      "urgent": "Urgent"
+    },
+    "priorityBadge": {
+      "low": "Laag",
+      "medium": "Gemiddeld",
+      "high": "Hoog",
+      "urgent": "Urgent"
+    },
+    "fields": {
+      "title": "Titel",
+      "description": "Beschrijving",
+      "priority": "Prioriteit",
+      "category": "Categorie",
+      "status": "Status",
+      "createdBy": "Gemaakt Door",
+      "assignedTo": "Toegewezen Aan",
+      "createdAt": "Gemaakt Op",
+      "updatedAt": "Bijgewerkt Op",
+      "resolvedAt": "Opgelost Op"
+    },
+    "messages": {
+      "createSuccess": "Serviceaanvraag succesvol aangemaakt",
+      "updateSuccess": "Serviceaanvraag succesvol bijgewerkt",
+      "deleteSuccess": "Serviceaanvraag succesvol verwijderd",
+      "createError": "Serviceaanvraag maken mislukt",
+      "updateError": "Serviceaanvraag bijwerken mislukt",
+      "deleteError": "Serviceaanvraag verwijderen mislukt"
+    }
+    ,
+    "confirmDelete": "Weet je zeker dat je deze serviceaanvraag wilt verwijderen? Deze actie kan niet ongedaan worden gemaakt."
+  }
+}
+

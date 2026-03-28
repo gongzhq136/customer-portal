@@ -1,0 +1,79 @@
+title: "ApexPro Facility Services Portal"
+description: Manage service orders, invoices, service requests and SLAs in one secure portal.
+seo:
+  title: ApexPro Facility Services
+  description: A unified portal for businesses to manage service orders, invoices, requests and SLA performance.
+navigation: false
+hero:
+  links:
+    - label: Log in
+      icon: i-lucide-log-in
+      to: /login
+      size: xl
+      color: primary
+    - label: Sign up
+      icon: i-lucide-user-plus
+      to: /signup
+      size: xl
+      color: neutral
+      variant: subtle
+sections:
+  - title: Built for facilities teams
+    description: ApexPro delivers reliable cleaning, maintenance and coordination services, backed by a transparent customer portal.
+    id: features
+    orientation: horizontal
+    features:
+      - name: Track orders
+        description: Follow service orders from request to completion with real‑time status.
+        icon: i-lucide-clipboard-list
+      - name: View invoices
+        description: Access invoices and download PDFs anytime.
+        icon: i-lucide-receipt-text
+      - name: Service requests
+        description: Open and follow up requests with clear timelines.
+        icon: i-lucide-life-buoy
+  - title: Why ApexPro
+    description: Operational reliability, clear communication and measurable outcomes.
+    orientation: horizontal
+    reverse: true
+    features:
+      - name: Reliable delivery
+        description: Teams scheduled and monitored to meet your service windows.
+        icon: i-lucide-calendar-check
+      - name: Transparent reporting
+        description: SLA dashboards and exportable reports.
+        icon: i-lucide-chart-line
+      - name: Dedicated support
+        description: Fast responses from our portal support team.
+        icon: i-lucide-headset
+features:
+  title: What you can do in the portal
+  description: Everything you need to manage your facility services in one place.
+  items:
+    - title: Orders
+      description: Create, approve and track work orders with statuses and notes.
+      icon: i-lucide-clipboard-check
+    - title: Invoices
+      description: View invoice history, download PDFs and manage billing details.
+      icon: i-lucide-file-text
+    - title: Requests
+      description: Raise new service requests with priority and attachments.
+      icon: i-lucide-mail-plus
+    - title: SLA Monitoring
+      description: Track KPIs with clear dashboards and exports.
+      icon: i-lucide-gauge
+    - title: Notifications
+      description: Receive proactive updates about planned visits and changes.
+      icon: i-lucide-bell
+cta:
+  title: Ready to get started?
+  description: Log in to manage your services, or create an account to join ApexPro.
+  links:
+    - label: Sign up
+      to: '/signup'
+      color: primary
+      icon: i-lucide-user-plus
+    - label: Log in
+      to: '/login'
+      variant: subtle
+      icon: i-lucide-log-in
